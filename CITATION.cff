@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you reference or use this coursework repository in your studies or research, please cite it as below."
+authors:
+  - family-names: "Biswas"
+    given-names: "Sagar"
+title: "ITECH3102 - Big Data and Data Visualisation Coursework Portfolio"
+version: 1.0.0
+date-released: 2026-10-31
+url: "https://github.com/SagarBiswas-MultiHAT/ITECH-3102_Big-Data-AND-Data-Visualisation"
+keywords:
+  - "data visualization"
+  - "tableau"
+  - "d3js"
+  - "big data"
+  - "business intelligence"
+  - "federation university"
+  - "interactive dashboards"
+

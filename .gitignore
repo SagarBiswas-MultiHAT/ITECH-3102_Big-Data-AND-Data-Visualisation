@@ -1,0 +1,31 @@
+# Tableau lock and autosave files
+~*.twb*
+*.twbr
+TableauTemp/
+*.hyper.tmp
+
+# Microsoft Office temporary lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+~$*.csv
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# Editor and IDE configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+

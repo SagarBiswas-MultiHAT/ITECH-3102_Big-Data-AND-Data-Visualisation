@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- Course: ITECH3102 Big Data and Data Visualisation | Institution: Federation University Australia -->
+<!-- Author: Sagar Biswas | Copyright (c) 2026 Sagar Biswas. All rights reserved. -->
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='f94b3da66d97b4aacf000836a9fd497a507f5c4944afcdab07f0ce83972fc76f' _.fcp.WorkbookFingerprinting.true...creator-author-id='f94b3da66d97b4aacf000836a9fd497a507f5c4944afcdab07f0ce83972fc76f' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='f94b3da66d97b4aacf000836a9fd497a507f5c4944afcdab07f0ce83972fc76f' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='f94b3da66d97b4aacf000836a9fd497a507f5c4944afcdab07f0ce83972fc76f' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='student_scores' inline='true' name='federated.0v7aicd1py3zsm1db4h791jc574j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='student_scores' name='textscan.0d8fjtk1qg6b3h10y0w7s0iwnpg1'>
+            <connection class='textscan' directory='../data' filename='student_scores.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0d8fjtk1qg6b3h10y0w7s0iwnpg1' name='student_scores.csv' table='[student_scores#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Student' ordinal='0' />
+            <column datatype='string' name='Subject' ordinal='1' />
+            <column datatype='integer' name='Score' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[student_scores.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Student</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Student]</local-name>
+            <parent-name>[student_scores.csv]</parent-name>
+            <remote-alias>Student</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[student_scores.csv_36B90B25343140BDA05C07DCD7D90566]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subject</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Subject]</local-name>
+            <parent-name>[student_scores.csv]</parent-name>
+            <remote-alias>Subject</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[student_scores.csv_36B90B25343140BDA05C07DCD7D90566]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Score]</local-name>
+            <parent-name>[student_scores.csv]</parent-name>
+            <remote-alias>Score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[student_scores.csv_36B90B25343140BDA05C07DCD7D90566]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Lower Bound' datatype='real' name='[Calculation_1483843683864576]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Score]) - STDEV([Score])' />
+      </column>
+      <column caption='Upper Bound' datatype='real' name='[Calculation_1483843683987457]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Score]) + STDEV([Score])' />
+      </column>
+      <column caption='Consistency' datatype='string' name='[Calculation_1483843686223875]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF STDEV([Score]) &lt; 6 THEN &quot;High&quot;&#13;&#10;ELSEIF STDEV([Score]) &lt; 8 THEN &quot;Medium&quot;&#13;&#10;ELSE &quot;Low&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Math Score' datatype='integer' name='[Calculation_1483843696361476]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Subject] = &quot;Math&quot; THEN [Score] END' />
+      </column>
+      <column caption='Physics Score' datatype='integer' name='[Calculation_1483843696472069]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Subject] = &quot;Physics&quot; THEN [Score] END' />
+      </column>
+      <column caption='student_scores.csv' datatype='table' name='[__tableau_internal_object_id__].[student_scores.csv_36B90B25343140BDA05C07DCD7D90566]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1483843686223875]' derivation='User' name='[usr:Calculation_1483843686223875:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/sagar/AppData/Local/Temp/TableauTemp/#TableauTemp_1xxlfu60l8qerb113of051a211m3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/05/2026 06:44:26 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Student</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Student]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Student</remote-alias>
+              <ordinal>0</ordinal>
+              <family>student_scores.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[student_scores.csv_36B90B25343140BDA05C07DCD7D90566]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subject</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Subject]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subject</remote-alias>
+              <ordinal>1</ordinal>
+              <family>student_scores.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[student_scores.csv_36B90B25343140BDA05C07DCD7D90566]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>student_scores.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[student_scores.csv_36B90B25343140BDA05C07DCD7D90566]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_1483843686223875:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Bangladesh&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='student_scores.csv' id='student_scores.csv_36B90B25343140BDA05C07DCD7D90566'>
+            <properties context=''>
+              <relation connection='textscan.0d8fjtk1qg6b3h10y0w7s0iwnpg1' name='student_scores.csv' table='[student_scores#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Student' ordinal='0' />
+                  <column datatype='string' name='Subject' ordinal='1' />
+                  <column datatype='integer' name='Score' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#0f1115' fontname='quote-cjk-patch,Inter,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif' fontsize='16'>Average Score by Subject</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='student_scores' name='federated.0v7aicd1py3zsm1db4h791jc574j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v7aicd1py3zsm1db4h791jc574j'>
+            <column datatype='integer' name='[Score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Subject]' role='dimension' type='nominal' />
+            <column-instance column='[Score]' derivation='Avg' name='[avg:Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Subject]' derivation='None' name='[none:Subject:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0v7aicd1py3zsm1db4h791jc574j].[none:Subject:nk]' direction='DESC' using='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' field-type='quantitative' max='100.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' palette='red_green_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-pane' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v7aicd1py3zsm1db4h791jc574j].[none:Subject:nk]</rows>
+        <cols>[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]</cols>
+      </table>
+      <simple-id uuid='{2410EA39-8D4A-4A98-899B-C1D7E5BD85F0}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#0f1115' fontname='quote-cjk-patch,Inter,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif' fontsize='12'>Student Performance Consistency</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='student_scores' name='federated.0v7aicd1py3zsm1db4h791jc574j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v7aicd1py3zsm1db4h791jc574j'>
+            <column caption='Lower Bound' datatype='real' name='[Calculation_1483843683864576]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Score]) - STDEV([Score])' />
+            </column>
+            <column caption='Upper Bound' datatype='real' name='[Calculation_1483843683987457]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Score]) + STDEV([Score])' />
+            </column>
+            <column caption='Consistency' datatype='string' name='[Calculation_1483843686223875]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF STDEV([Score]) &lt; 6 THEN &quot;High&quot;&#13;&#10;ELSEIF STDEV([Score]) &lt; 8 THEN &quot;Medium&quot;&#13;&#10;ELSE &quot;Low&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Student]' role='dimension' type='nominal' />
+            <column-instance column='[Score]' derivation='Avg' name='[avg:Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Student]' derivation='None' name='[none:Student:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1483843683864576]' derivation='User' name='[usr:Calculation_1483843683864576:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1483843683987457]' derivation='User' name='[usr:Calculation_1483843683987457:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1483843686223875]' derivation='User' name='[usr:Calculation_1483843686223875:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0v7aicd1py3zsm1db4h791jc574j].[none:Student:nk]' direction='DESC' using='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' field-type='quantitative' max='100.0' min='50.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843686223875:nk]' />
+              <lod column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683864576:qk]' />
+              <lod column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683987457:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='min' id='refline0' label-type='none' paired-id='refline1' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683864576:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='max' id='refline1' label-type='none' paired-id='refline0' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683987457:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='min' id='refline2' label-type='none' paired-id='refline3' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683864576:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='max' id='refline3' label-type='none' paired-id='refline2' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683987457:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='min' id='refline4' label-type='none' paired-id='refline5' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683864576:qk]' z-order='3' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='max' id='refline5' label-type='none' paired-id='refline4' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683987457:qk]' z-order='3' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='min' id='refline6' label-type='none' paired-id='refline7' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683864576:qk]' z-order='4' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='max' id='refline7' label-type='none' paired-id='refline6' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683987457:qk]' z-order='4' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='min' id='refline8' label-type='none' paired-id='refline9' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683864576:qk]' z-order='5' />
+            <reference-line axis-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' enable-instant-analytics='true' formula='max' id='refline9' label-type='none' paired-id='refline8' scope='per-cell' symmetric='false' value-column='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843683864576:qk]' z-order='5' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.3953038454055786' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v7aicd1py3zsm1db4h791jc574j].[none:Student:nk]</rows>
+        <cols>[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]</cols>
+      </table>
+      <simple-id uuid='{0D694262-0D36-4667-B751-0EB2AA1219D2}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#0f1115' fontname='quote-cjk-patch,Inter,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif' fontsize='12'>Relationship Between Math and Physics Performance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='student_scores' name='federated.0v7aicd1py3zsm1db4h791jc574j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v7aicd1py3zsm1db4h791jc574j'>
+            <column caption='Math Score' datatype='integer' name='[Calculation_1483843696361476]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Subject] = &quot;Math&quot; THEN [Score] END' />
+            </column>
+            <column caption='Physics Score' datatype='integer' name='[Calculation_1483843696472069]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Subject] = &quot;Physics&quot; THEN [Score] END' />
+            </column>
+            <column datatype='integer' name='[Score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Student]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Subject]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1483843696361476]' derivation='Avg' name='[avg:Calculation_1483843696361476:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1483843696472069]' derivation='Avg' name='[avg:Calculation_1483843696472069:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Student]' derivation='None' name='[none:Student:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Calculation_1483843696361476:qk]' field-type='quantitative' max='100.0' min='50.0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Calculation_1483843696472069:qk]' field-type='quantitative' max='100.0' min='50.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0v7aicd1py3zsm1db4h791jc574j].[none:Student:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Calculation_1483843696472069:qk]</rows>
+        <cols>[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Calculation_1483843696361476:qk]</cols>
+      </table>
+      <simple-id uuid='{DF7F6DC0-9DD0-4C02-A820-6B50BD8F375B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='172'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v7aicd1py3zsm1db4h791jc574j].[avg:Score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C0F98B59-73CC-4E66-AFCA-C990DE7D82FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.0v7aicd1py3zsm1db4h791jc574j].[usr:Calculation_1483843686223875:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9DE9553E-AC90-47B9-BB75-41239976462B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='192'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EEE9611D-0F78-40A4-9189-EFD796BC65F1}' />
+    </window>
+  </windows>
+</workbook>
