@@ -1,0 +1,73 @@
+Student,Subject,Score
+Student A,Math,85
+Student A,Physics,78
+Student A,Chemistry,82
+Student A,Biology,75
+Student A,English,88
+Student A,History,72
+Student A,Geography,70
+Student A,Computer Science,90
+Student A,Art,65
+Student B,Math,72
+Student B,Physics,65
+Student B,Chemistry,68
+Student B,Biology,80
+Student B,English,75
+Student B,History,85
+Student B,Geography,82
+Student B,Computer Science,70
+Student B,Art,78
+Student C,Math,90
+Student C,Physics,88
+Student C,Chemistry,85
+Student C,Biology,70
+Student C,English,82
+Student C,History,68
+Student C,Geography,65
+Student C,Computer Science,92
+Student C,Art,60
+Student D,Math,65
+Student D,Physics,70
+Student D,Chemistry,72
+Student D,Biology,85
+Student D,English,70
+Student D,History,78
+Student D,Geography,80
+Student D,Computer Science,68
+Student D,Art,88
+Student E,Math,78
+Student E,Physics,82
+Student E,Chemistry,75
+Student E,Biology,72
+Student E,English,85
+Student E,History,80
+Student E,Geography,78
+Student E,Computer Science,75
+Student E,Art,72
+Student F,Math,88
+Student F,Physics,85
+Student F,Chemistry,90
+Student F,Biology,68
+Student F,English,78
+Student F,History,65
+Student F,Geography,62
+Student F,Computer Science,95
+Student F,Art,58
+Student G,Math,70
+Student G,Physics,68
+Student G,Chemistry,65
+Student G,Biology,78
+Student G,English,72
+Student G,History,82
+Student G,Geography,85
+Student G,Computer Science,72
+Student G,Art,80
+Student H,Math,82
+Student H,Physics,80
+Student H,Chemistry,78
+Student H,Biology,82
+Student H,English,80
+Student H,History,75
+Student H,Geography,72
+Student H,Computer Science,85
+Student H,Art,70
