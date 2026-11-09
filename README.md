@@ -11,6 +11,7 @@
 [![D3.js](https://img.shields.io/badge/D3.js-v5.0-F9A03C?style=for-the-badge&logo=d3dotjs&logoColor=white)](https://d3js.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Python 3](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Sponsor SagarBiswas-MultiHAT on Polar.sh](https://img.shields.io/badge/Sponsor-Polar.sh-0062FF?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://buy.polar.sh/polar_cl_I7DT5UQNUs1Qjb4VrFYOiRA2nkb3RVVUJCnjr3o5SGK)
 
 <p align="center">
   A curated collection of visual analytics solutions, executive business intelligence dashboards, and web-based graphic architectures developed for <b>ITECH3102 Big Data and Data Visualisation</b> at Federation University Australia.
@@ -71,6 +72,7 @@
   - [Prerequisites](#prerequisites)
   - [Opening Tableau Workbooks](#opening-tableau-workbooks)
   - [Running Web & D3.js Exercises](#running-web--d3js-exercises)
+- [Support MultiHAT Open-Source](#support-multihat-open-source)
 - [Citation](#citation)
 - [Intellectual Property & Licensing](#intellectual-property--licensing)
 
@@ -236,6 +238,16 @@ Open your browser and visit:
 - `http://localhost:8000/index.html` (D3.js Template)
 - `http://localhost:8000/circle.html` (SVG Circle Rendering)
 - `http://localhost:8000/rgba.html` (RGBA Color Model Interaction)
+
+---
+
+## Support MultiHAT Open-Source
+
+If you find this project useful in your workflow, development, or security research, consider supporting **SagarBiswas-MultiHAT** in its ongoing maintenance and future updates (supports both One-Time and Monthly backing):
+
+[![Support on Polar.sh](https://img.shields.io/badge/Support%20on-Polar.sh-0062FF?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://buy.polar.sh/polar_cl_I7DT5UQNUs1Qjb4VrFYOiRA2nkb3RVVUJCnjr3o5SGK)
+[![Portfolio](https://img.shields.io/badge/Portfolio-sagarbiswas.multihat.dev-2563EB?style=for-the-badge&logo=todoist&logoColor=white)](https://sagarbiswas.multihat.dev/)
+[![Agency](https://img.shields.io/badge/Agency-multihat.dev-111827?style=for-the-badge&logo=vercel&logoColor=white)](https://multihat.dev)
 
 ---
 
